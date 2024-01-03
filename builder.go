@@ -91,8 +91,6 @@ func (b *RequestBuilder) SetContentURLEncoded() *RequestBuilder {
 	return b.AddHeader("Content-Type", "application/x-www-form-urlencoded")
 }
 
-func (b *RequestBuilder) SetContentType()
-
 func (b *RequestBuilder) SetBasicAuth(user, password string) *RequestBuilder {
 	b.request.basicAuth = &basicAuth{
 		user:     user,
